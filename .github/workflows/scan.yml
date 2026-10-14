@@ -1,0 +1,39 @@
+name: Odds-scan
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # hvert 30. minutt (UTC). Endre for oftere/sjeldnere.
+  workflow_dispatch:          # gir en "Run workflow"-knapp for manuell kjøring
+
+permissions:
+  contents: write
+
+concurrency:
+  group: odds-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Skann odds
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          SPORTS: ${{ vars.SPORTS || 'soccer_epl soccer_norway_eliteserien' }}
+          MIN_EV: ${{ vars.MIN_EV || '0.03' }}
+        run: python odds_scanner.py --out docs --sports "$SPORTS" --min-ev "$MIN_EV" --max-age 15
+
+      - name: Publiser til nettsiden
+        run: |
+          touch docs/.nojekyll
+          git config user.name "odds-bot"
+          git config user.email "odds-bot@users.noreply.github.com"
+          git add docs
+          git commit -m "Oppdaterte odds $(date -u +%Y-%m-%dT%H:%MZ)" || echo "Ingen endringer"
+          git push
