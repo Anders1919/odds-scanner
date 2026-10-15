@@ -1,8 +1,6 @@
 idrett,kamp,start,marked,utfall,bookmaker,odds,fair_odds,median_andre,ev_pct,kilde,kelly_innsats,flagg
-soccer_norway_eliteserien,HamKam – Bodø/Glimt,2026-10-17T12:00:00Z,h2h,HamKam,betfair_ex_eu,12.4,11.509,9.5,7.74,skarp:pinnacle,1.7,
-soccer_norway_eliteserien,HamKam – Bodø/Glimt,2026-10-17T12:00:00Z,h2h,HamKam,betfair_ex_uk,12.4,11.509,9.5,7.74,skarp:pinnacle,1.7,
-soccer_epl,Manchester City – Ipswich Town,2026-10-17T14:00:00Z,h2h,Ipswich Town,betfair_ex_eu,12.875,12.29,10.5,4.76,skarp:pinnacle,1.0,
-soccer_epl,Manchester City – Ipswich Town,2026-10-17T14:00:00Z,h2h,Ipswich Town,betfair_ex_uk,12.875,12.29,10.5,4.76,skarp:pinnacle,1.0,
-soccer_epl,Manchester City – Ipswich Town,2026-10-17T14:00:00Z,h2h,Ipswich Town,smarkets,12.875,12.29,10.5,4.76,skarp:pinnacle,1.0,
-soccer_norway_eliteserien,HamKam – Bodø/Glimt,2026-10-17T12:00:00Z,h2h,HamKam,betfair_sb_uk,12.0,11.509,9.5,4.27,skarp:pinnacle,0.97,
-soccer_epl,Newcastle United – Aston Villa,2026-10-17T16:30:00Z,h2h,Aston Villa,onexbet,3.19,3.087,2.95,3.33,skarp:pinnacle,3.8,
+soccer_norway_eliteserien,HamKam – Bodø/Glimt,2026-10-17T12:00:00Z,h2h,HamKam,betfair_ex_eu,12.4,11.509,9.41,7.74,skarp:pinnacle,1.7,
+soccer_norway_eliteserien,HamKam – Bodø/Glimt,2026-10-17T12:00:00Z,h2h,HamKam,betfair_ex_uk,12.4,11.509,9.41,7.74,skarp:pinnacle,1.7,
+soccer_norway_eliteserien,HamKam – Bodø/Glimt,2026-10-17T12:00:00Z,h2h,HamKam,betfair_sb_uk,12.0,11.509,9.41,4.27,skarp:pinnacle,0.97,
+soccer_norway_eliteserien,Molde – IK Start,2026-10-18T15:00:00Z,h2h,IK Start,betsson,9.4,9.05,7.0,3.86,skarp:pinnacle,1.15,
+soccer_epl,Newcastle United – Aston Villa,2026-10-17T16:30:00Z,h2h,Aston Villa,onexbet,3.19,3.087,2.947,3.33,skarp:pinnacle,3.8,
